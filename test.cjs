@@ -1,0 +1,19 @@
+const assert = require('node:assert/strict');
+const {TERMS,GROUPS}=require('./data.js');
+const {daysBetween,warsawDate,getRows,segments}=require('./app.js');
+assert.equal(daysBetween('2023-12-13','2026-10-12'),1034);
+assert.equal(daysBetween('2007-11-16','2014-09-22'),2502);
+assert.equal(daysBetween('1992-07-10','1993-10-26'),473);
+assert.equal(daysBetween('1993-10-26','1995-03-07'),497);
+assert.equal(daysBetween('1944-11-29','1947-07-02'),945);
+assert.equal(warsawDate(new Date('2026-10-11T22:30:00Z')),'2026-10-12');
+assert.equal(daysBetween('2024-03-30','2024-04-01'),2);
+assert.equal(daysBetween('2024-02-28','2024-03-01'),2);
+assert.equal(TERMS.filter(t=>t.end===null).length,1);
+assert.equal(TERMS.filter(t=>t.era==='iii').length,18);
+for(const t of TERMS){assert.ok(GROUPS[t.group]);assert.ok(daysBetween(t.start,t.end||'2026-10-12')>0);assert.equal(segments(t,'2026-10-12').reduce((a,s)=>a+s.days,0),daysBetween(t.start,t.end||'2026-10-12'));}
+const people=getRows(TERMS,'people','2026-10-12');
+assert.equal(people.find(p=>p.name==='Donald Tusk').days,3536);
+assert.equal(people.find(p=>p.name==='Józef Cyrankiewicz').days,8239);
+assert.equal(getRows(TERMS.filter(t=>t.era==='exile'),'people','2026-10-12').find(p=>p.name==='Władysław Sikorski').days,1371);
+console.log('PASS: dates, Warsaw midnight, leap year, DST, scope, aggregation and party segments. '+TERMS.length+' periods / '+people.length+' people.');
