@@ -44,7 +44,7 @@ const raw = [
 ['August Zaleski','1940-07-18','1940-07-20','exile','Bezpartyjny','independent','Nie utworzył rządu.'],
 ['Władysław Sikorski','1940-07-20','1943-07-04','exile','Bezpartyjny','independent'],
 ['Stanisław Mikołajczyk','1943-07-14','1944-11-24','exile','Stronnictwo Ludowe','agr'],
-['Tomasz Arciszewski','1944-11-29','1947-07-02','exile','PPS','pps','Pełne urzędowanie do 1947. Wielka Brytania i USA cofnęły uznanie rządowi 5 lipca 1945.'],
+['Tomasz Arciszewski','1944-11-29','1945-07-05','exile','PPS','pps','W zestawieniu liczymy okres do cofnięcia uznania rządowi przez Wielką Brytanię i USA 5 lipca 1945; faktycznie urzędował do 2 lipca 1947.'],
 ['Edward Osóbka-Morawski','1944-07-21','1947-02-05','prl','PPS','pps','Od 21 lipca 1944 przewodniczący PKWN; od 31 grudnia 1944 premier.'],
 ['Józef Cyrankiewicz','1947-02-05','1952-11-20','prl','PPS → PZPR','pzpr','PPS do 15 grudnia 1948, następnie PZPR.'],
 ['Bolesław Bierut','1952-11-20','1954-03-18','prl','PZPR','pzpr'],

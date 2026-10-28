@@ -2,7 +2,7 @@
 
 Statyczna, responsywna strona: https://kotymek.github.io/premierzy/
 
-Poziomy wykres dni urzędowania od 7 listopada 1918, filtry epok, wyszukiwanie, sortowanie, sumy na osobę i eksport CSV. Rządy na uchodźstwie do pełnego urzędowania Tomasza Arciszewskiego (2 lipca 1947).
+Poziomy wykres dni urzędowania od 7 listopada 1918, filtry epok, wyszukiwanie, sortowanie, sumy na osobę i eksport CSV. Rządy na uchodźstwie do 5 lipca 1945: okres Tomasza Arciszewskiego ograniczony do cofnięcia uznania przez Wielką Brytanię i USA (218 dni), mimo faktycznego urzędowania do 2 lipca 1947.
 
 ## Uruchomienie
 
